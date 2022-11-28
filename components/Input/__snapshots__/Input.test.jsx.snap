@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input smaple 1`] = `
+<input
+  className="input--undefined  css-g1te2k"
+  data-testid="input--test"
+  placeholder="Input test"
+/>
+`;
+
+exports[`Input smaple size big 1`] = `
+<input
+  className="input--big  css-g1te2k"
+  data-testid="input--test"
+  placeholder="Input test"
+/>
+`;
+
+exports[`Input smaple type password 1`] = `
+<input
+  className="input--undefined  css-g1te2k"
+  data-testid="input--test"
+  placeholder="Input test"
+  type="password"
+/>
+`;
