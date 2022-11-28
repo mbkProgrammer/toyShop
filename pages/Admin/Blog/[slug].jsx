@@ -1,46 +1,45 @@
 import { useTheme } from '@emotion/react';
-import { gql, useMutation, useQuery } from '@apollo/client';
 import { format } from 'date-fns';
 import { Layout } from '../../../containers';
 import { Button, Space, Typography } from '../../../components';
 
-const SINGLE_POST_QUERY = gql`
-  query getPost($id: ID!){
-   post(id: $id) {
-      id
-      title
-      date
-      body
-  }
-}
-`;
+// const SINGLE_POST_QUERY = gql`
+//   query getPost($id: ID!){
+//    post(id: $id) {
+//       id
+//       title
+//       date
+//       body
+//   }
+// }
+// `;
 
-const DELETE_POST = gql`
-mutation DeletePosts($id: ID!){
-  deletePost(id: $id)
-}
-`;
+// const DELETE_POST = gql`
+// mutation DeletePosts($id: ID!){
+//   deletePost(id: $id)
+// }
+// `;
 
 const BlogPost = ({ planId }) => {
-  const [deletePost] = useMutation(DELETE_POST);
+  // const [deletePost] = useMutation(DELETE_POST);
   const id = +planId.slug;
-  const {
-    loading, error, data,
-  } = useQuery(
-    SINGLE_POST_QUERY,
-    {
-      variables: {
-        id,
-      },
-    },
-  );
+  // const {
+  //   loading, error, data,
+  // } = useQuery(
+  //   SINGLE_POST_QUERY,
+  //   {
+  //     variables: {
+  //       id,
+  //     },
+  //   },
+  // );
 
   const handleDelete = () => {
-    deletePost({
-      variables: {
-        id,
-      },
-    });
+    // deletePost({
+    //   variables: {
+    //     id,
+    //   },
+    // });
   };
 
   const theme = useTheme();
@@ -49,7 +48,7 @@ const BlogPost = ({ planId }) => {
       <Space />
 
       <div className="blogPost">
-        {data && !loading ? (
+        {/* {data && !loading ? (
           <>
             <Typography variant="h3" align="center">{ data && data.post.title}</Typography>
             <Space />
@@ -62,7 +61,7 @@ const BlogPost = ({ planId }) => {
             </Typography>
             <Space />
           </>
-        ) : <Typography variant="h3">loading</Typography>}
+        ) : <Typography variant="h3">loading</Typography>} */}
       </div>
 
       <style jsx>

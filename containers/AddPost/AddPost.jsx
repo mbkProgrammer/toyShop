@@ -1,4 +1,3 @@
-import { gql, useMutation } from '@apollo/client';
 import { useTheme } from '@emotion/react';
 import { useState } from 'react';
 import {
@@ -6,20 +5,20 @@ import {
   Input, Space, Textarea, Typography,
 } from '../../components';
 
-const ADD_POST = gql`
-  mutation CREATE_POST($date: String!, $title: String!, $body: String!) {
-    createPost(input: { date: $date, title: $title, body: $body }) {
-      title
-      body
-      date
-    }
-  }
-`;
+// const ADD_POST = gql`
+//   mutation CREATE_POST($date: String!, $title: String!, $body: String!) {
+//     createPost(input: { date: $date, title: $title, body: $body }) {
+//       title
+//       body
+//       date
+//     }
+//   }
+// `;
 
 const AddPost = ({ show, setShow, refetch }) => {
   const theme = useTheme();
   const [form, setForm] = useState({});
-  const [addPost] = useMutation(ADD_POST);
+  // const [addPost] = useMutation(ADD_POST);
 
   const handleChange = (e, name) => {
     setForm({
@@ -29,14 +28,14 @@ const AddPost = ({ show, setShow, refetch }) => {
   };
 
   const handleSubmit = async (e) => {
-    addPost({
-      variables: {
-        date: `${new Date().getTime()}`,
-        title: form.title,
-        body: form.body,
-        id: new Date().getTime(),
-      },
-    });
+    // addPost({
+    //   variables: {
+    //     date: `${new Date().getTime()}`,
+    //     title: form.title,
+    //     body: form.body,
+    //     id: new Date().getTime(),
+    //   },
+    // });
     setForm({ title: '', body: '' });
     setShow(false);
   };
