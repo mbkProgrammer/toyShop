@@ -29,7 +29,7 @@ const Products = ({ products, plan_id }) => {
       </Head>
       <div className="singleProduct">
         <img
-          src={`/${product && product.img}`}
+          src={`${product && product.img}`}
           alt={product && product.name}
           className="singleProduct__img"
         />

@@ -20,10 +20,9 @@ const Home = ({ products }) => {
       </Head>
       <div className="shop">
         <div className="Shop__tittle">
-          <Typography variant="h2">Products</Typography>
+          <Typography variant="h2">محصولات</Typography>
           <Typography variant="body1">
-            Order it for you or for your beloved ones
-            {' '}
+            یادتون نره که خوشحالی سرمایه ی زندگیه پس روی خوشحالی هات سرمایه گذاری کن.
           </Typography>
         </div>
 

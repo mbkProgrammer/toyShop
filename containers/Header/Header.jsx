@@ -67,13 +67,13 @@ const Header = () => {
 
       <div className="Logo">
         <Image
-          src="/assets/img/nav/icon@2x.svg"
+          src="/assets/img/nav/icon@2x.png"
           width="34px"
           height="34px"
           alt="logo"
           className="Logo__img"
         />
-        MBK
+        ممد توی
       </div>
 
       <Nav className={toggleActive ? 'active' : ''}>
@@ -85,25 +85,25 @@ const Header = () => {
               : ''
           }
         >
-          Shop
+          فروشگاه
         </NavItem>
         <NavItem
           onClick={() => router.push('/About')}
           className={router.route === '/About' ? 'active' : ''}
         >
-          About
+          درباره ما
         </NavItem>
         <NavItem
           onClick={() => router.push('/Blog')}
           className={router.route.includes('/Blog') ? 'active' : ''}
         >
-          Blog
+          وبلاگ
         </NavItem>
         <NavItem
           onClick={() => router.push('/Contact')}
           className={router.route === '/Contact' ? 'active' : ''}
         >
-          Contact
+          تماس با ما
         </NavItem>
       </Nav>
 
@@ -182,7 +182,7 @@ const Header = () => {
             padding: 2px 4px;
             text-align: center;
             position: relative;
-            left: -10px;
+            left: +10px;
             top: -15px;
           }
 

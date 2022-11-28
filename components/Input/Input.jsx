@@ -58,6 +58,9 @@ const Input = ({
             width: 216px;
             ${styles}
           }
+          &::placeholder {
+            color: #ccc;
+          }
           @media (max-width: 480px) {
             &.input--big,
             &.input--small,

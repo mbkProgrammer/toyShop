@@ -34,7 +34,7 @@ const Admin = ({ products }) => {
       </Head>
       <AdminLayout>
         <AddProducts setShow={setShow} show={show} />
-        <Button varaint="contained" styles="margin: auto; display: block;" onClick={() => setShow(!show)}>Add Products</Button>
+        <Button varaint="contained" styles="margin: auto; display: block;" onClick={() => setShow(!show)}>اضافه کردن محصول</Button>
         <div className="products__container">
           {products
             && products.map((item) => (

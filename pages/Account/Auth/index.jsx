@@ -99,10 +99,10 @@ const Auth = () => {
                 padding: 20px 0;
               `}
             >
-              Create Account
+              ساخت حساب
             </Typography>
             <Input
-              placeholder="E-mail"
+              placeholder="ایمیل"
               type="email"
               size="big"
               styles="background: none; max-width: 100%; color: #fafafa; &::placeholder {color: #fafafa;}"
@@ -111,14 +111,14 @@ const Auth = () => {
               errorMassage="E-mail not valid!"
             />
             <Input
-              placeholder="Username"
+              placeholder="نام کاربری"
               type="text"
               size="big"
               styles="background: none; max-width: 100%; color: #fafafa; &::placeholder {color: #fafafa;}"
               onChange={handleNameValue}
             />
             <Input
-              placeholder="Password"
+              placeholder="رمز عبور"
               type="password"
               size="big"
               styles="background: none; max-width: 100%; color: #fafafa; &::placeholder {color: #fafafa;}"
@@ -132,7 +132,7 @@ const Auth = () => {
               styles="max-width: 100%; width: 445px; margin: 10px;"
               onClick={SubmitAuth}
             >
-              Sign Up
+              ساخت حساب
             </Button>
             <Button
               varaint="text"
@@ -140,7 +140,7 @@ const Auth = () => {
               styles="max-width: 100%; width: 445px; margin: 10px; text-align: left; padding: 8px 25px;"
               onClick={() => setAuthType('login')}
             >
-              Do you have account: Login
+              حسابی دارید؟ وارد شوید.
             </Button>
           </div>
         ) : (
@@ -153,10 +153,10 @@ const Auth = () => {
                 padding: 20px 0;
               `}
             >
-              Sign In To MBK
+              ورود به حساب
             </Typography>
             <Input
-              placeholder="E-mail"
+              placeholder="ایمیل"
               type="email"
               size="big"
               styles="background: none; max-width: 100%; color: #fafafa; &::placeholder {color: #fafafa;}"
@@ -165,7 +165,7 @@ const Auth = () => {
               errorMassage="E-mail not valid!"
             />
             <Input
-              placeholder="Password"
+              placeholder="رمز عبور"
               type="password"
               size="big"
               styles="background: none; max-width: 100%; color: #fafafa; &::placeholder {color: #fafafa;}"
@@ -179,7 +179,7 @@ const Auth = () => {
               styles="max-width: 100%; width: 445px; margin: 10px;"
               onClick={SubmitAuth}
             >
-              Sign In
+              وارد شدن
             </Button>
             <Button
               varaint="text"
@@ -187,7 +187,7 @@ const Auth = () => {
               styles="max-width: 100%; width: 445px; margin: 10px; text-align: left; padding: 8px 25px;"
               onClick={() => setAuthType('signUp')}
             >
-              Don't have account: signUp
+              حسابی ندارید؟ بسازید.
             </Button>
           </div>
         )}

@@ -58,6 +58,7 @@ const Card = ({
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    padding-top: 4px;
     width: 100%;
     height: 80px;
     justify-content: space-between;
@@ -69,13 +70,14 @@ const Card = ({
   const CardTittle = styled.h4`
     font-weight: 500;
     line-height: 22px;
-    font-size: 16px;
+    font-size: 20px;
+    text-align: center;
     margin: 0;
     margin-left: 5px;
+    color: #fafafa;
     height: 100%;
     max-height: 60px;
     overflow: hidden;
-    color: rgba(29, 41, 63, 1);
     @media (max-width: 300px){
       font-size: 14px;
     }
@@ -93,10 +95,10 @@ const Card = ({
     margin: 0;
     margin-bottom: 10px;
     margin-right: 10px;
-    color: ${theme.colors.primary};
+    color: ${theme.colors.background};
     &::after{
-      content: '  $';
-      color: ${theme.colors.primary};
+      content: '  تومان';
+      color: ${theme.colors.background};
   }
   `;
 

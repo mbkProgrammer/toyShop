@@ -1,10 +1,10 @@
 const theme = {
   mode: 'light',
   colors: {
-    primary: '#18A558',
-    secondary: '#F5FBF8',
+    primary: '#E14D2A',
+    secondary: '#FD841F',
     text: '#222322',
-    background: '#EAF6F0',
+    background: '#f0e0e5',
     error: '#C73E1D',
   },
   typography: {

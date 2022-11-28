@@ -13,7 +13,7 @@ const Button = ({
   color: ${theme.colors.primary};
   width: fit-content;
   font-size: 19px;
-  font-weight: 400;
+  font-weight: 500;
   border: none;
   border-radius: 5px;
   margin: 5px;

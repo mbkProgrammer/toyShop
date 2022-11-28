@@ -20,19 +20,19 @@ const Cart = ({ products }) => {
   return (
     <Layout>
       <Head>
-        <title>MBK: Cart</title>
+        <title>ممد: سبد خرید</title>
       </Head>
-      <Typography variant="h5" css="text-align: center;">Your cart items </Typography>
+      <Typography variant="h5" css="text-align: center;">سبد خرید شما</Typography>
       <Space />
-      <Button size="small" styles="display: block; margin: auto;" onClick={() => router.push('/')}>Back to shopping</Button>
+      <Button size="small" styles="display: block; margin: auto;" onClick={() => router.push('/')}>بازگشت به فروشگاه</Button>
       <Space />
       <table className="Cart__table">
         <thead>
           <tr>
-            <th className="Cart__t--Products">Products</th>
-            <th className="Cart__t--Price">Price</th>
-            <th className="Cart__t--Quantity">Quantity</th>
-            <th className="Cart__t--Total">Total</th>
+            <th className="Cart__t--Products">محصول</th>
+            <th className="Cart__t--Price">قیمت</th>
+            <th className="Cart__t--Quantity">تعداد</th>
+            <th className="Cart__t--Total">جمع</th>
           </tr>
         </thead>
         <tbody>
@@ -52,14 +52,14 @@ const Cart = ({ products }) => {
       `}
       >
         <Typography variant="h4">
-          Sub Total:
+          جمع خرید:
           {'         '}
           {subTotal}
           {'  '}
           $
         </Typography>
         {
-          carts.length !== 0 ? (<Button varaint="contained" onClick={() => router.push('/Account/Cart/Delivery')}>Check-out</Button>) : ('')
+          carts.length !== 0 ? (<Button varaint="contained" onClick={() => router.push('/Account/Cart/Delivery')}>سفارش دادن</Button>) : ('')
         }
 
       </div>

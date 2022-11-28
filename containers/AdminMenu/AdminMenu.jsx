@@ -128,7 +128,7 @@ const AdminMenu = () => {
             overflow: hidden;
             transition: 0.5s;
             width: 18rem;
-            left: 0;
+            right: 0;
           }
 
           @media (max-width: 560px) {

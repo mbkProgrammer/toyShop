@@ -69,13 +69,13 @@ const CartCard = ({ data, quantity }) => {
     <tr key={data.id}>
       <td className="Cart__t--Products">
         <CartCard>
-          <CartCardImg src={`../${data.img}`} alt={data.name} onClick={() => router.push(`/Products/${data.id}`)} />
+          <CartCardImg src={`${data.img}`} alt={data.name} onClick={() => router.push(`/Products/${data.id}`)} />
           <CartCardContent>
             <Typography variant="h5" css="overflow: hidden;">
               {data.name}
             </Typography>
             <Space />
-            <Button size="small" onClick={() => REMOVE_FROM_CART_ACTION(dispatch, { id: data.id })}>Remove</Button>
+            <Button size="small" onClick={() => REMOVE_FROM_CART_ACTION(dispatch, { id: data.id })}>حذف</Button>
           </CartCardContent>
         </CartCard>
       </td>
@@ -83,7 +83,7 @@ const CartCard = ({ data, quantity }) => {
         <Typography variant="h6">
           {data.price}
           {' '}
-          $
+          تومان
         </Typography>
       </td>
       <td className="Cart__t--Quantity">
@@ -93,14 +93,14 @@ const CartCard = ({ data, quantity }) => {
         <Typography variant="h6">
           {data.price * itemNum}
           {' '}
-          $
+          تومان
         </Typography>
       </td>
       <td className="Cart__t--Price-Quantity">
         <Typography variant="h6">
           {data.price * itemNum}
           {' '}
-          $
+          تومان
         </Typography>
         <Quantity itemNum={itemNum} setItemNum={setItemNum} />
       </td>

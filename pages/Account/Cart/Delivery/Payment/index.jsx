@@ -37,13 +37,13 @@ const Payment = () => {
             <header className="Header">
               <div className="Logo">
                 <Image
-                  src="/assets/img/nav/icon@2x.svg"
+                  src="/assets/img/nav/icon@2x.png"
                   width="34px"
                   height="34px"
                   alt="logo"
                   className="Logo__img"
                 />
-                MBK
+                ممد توی
               </div>
               <Stepper
                 defaultTitleColor={`${theme.colors.primary}`}
@@ -73,14 +73,13 @@ const Payment = () => {
       `}
             >
               <AiOutlineCheckCircle size="6em" color={theme.colors.primary} />
-              <Typography variant="h2">Payment Confirmed</Typography>
+              <Typography variant="h2">پرداخت انجام شد</Typography>
               <Space />
               <Typography variant="body1">
-                Thank you for buying . The nature is grateful to you. Now
-                that your order is confirmed it will be ready to ship in 2 days.
+                ممنون از خرید شما. ما در سریع ترین زمان برای شما ارسال میکنیم.
               </Typography>
               <Space />
-              <Button varaint="contained" onClick={() => router.push('/')}>Back to Shopping</Button>
+              <Button varaint="contained" onClick={() => router.push('/')}>بازگشت به فروشگاه</Button>
             </div>
           </>
         )

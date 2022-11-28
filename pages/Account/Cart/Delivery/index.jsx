@@ -96,49 +96,51 @@ const Delivary = () => {
       <Space />
       <Space />
       <form className="Delivary" onSubmit={handleSubmit}>
-        <Typography variant="h4">Shipping Address</Typography>
+        <Typography variant="h4">آدرس ارسال</Typography>
         <Space />
         <div className="Delivary__form">
           {delivaryInfoError
-            ? <Typography variant="h6" css={`color: ${theme.colors.error}`}>Check your Delivary Info</Typography>
+            ? <Typography variant="h6" css={`color: ${theme.colors.error}`}>آدرس ارسال را چک کنید.</Typography>
             : ''}
           <Input
             size="medium"
-            placeholder="Name"
+            placeholder="نام"
+            name="name"
             onChange={() => handleOnChange('name', event)}
             required
           />
           <Input
             size="medium"
-            placeholder="Second Name(optional)"
+            placeholder="نام دوم (اختیاری)"
+            name="address"
             onChange={() => handleOnChange('secondName', event)}
           />
           <Input
             size="big"
-            placeholder="Address and number"
+            placeholder="آدرس و شماره"
             onChange={() => handleOnChange('address', event)}
             required
           />
           <Textarea
-            placeholder="Shipping Note(optional)"
+            placeholder="یاداشت برای ارسال(اختیاری)"
             size="big"
             onChange={() => handleOnChange('note', event)}
           />
           <Input
             size="small"
-            placeholder="City"
+            placeholder="شهر"
             onChange={() => handleOnChange('city', event)}
             required
           />
           <Input
             size="small"
-            placeholder="Postal Code"
+            placeholder="کد پستی"
             onChange={() => handleOnChange('postalCode', event)}
             required
           />
           <Input
             size="small"
-            placeholder="Province"
+            placeholder="استان"
             onChange={() => handleOnChange('province', event)}
             required
           />
@@ -158,7 +160,7 @@ const Delivary = () => {
             size="small"
             styles="width: auto; margin: 10px 20px;"
           >
-            Back to Cart
+            برگشت به سبد خرید
           </Button>
           <Button
             varaint="contained"
@@ -166,7 +168,7 @@ const Delivary = () => {
             styles="width: auto; margin: 10px 20px;"
             type="submit"
           >
-            Go to Payment
+            رفتن به پرداخت
           </Button>
         </div>
       </form>

@@ -16,16 +16,17 @@ const AdminLayout = ({ children }) => {
         {`
         .AdminLayout {
           display: flex;
+          justify-content: center;
           max-width: 100vw;
           overflow: hidden;
         }
         .AdminLayout__container {
-          margin-left: 290px;
+          margin-right: 290px;
           margin-bottom: 40px;
         }
         @media (max-width: 560px) {
           .AdminLayout__container {
-            margin-left: 20px;
+            margin-right: 20px;
             margin-bottom: 40px;
           }
         }

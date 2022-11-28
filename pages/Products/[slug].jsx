@@ -52,7 +52,7 @@ const Products = ({ products, plan_id }) => {
         </title>
       </Head>
       <div className="singleProduct">
-        <img src={`/${product && product.img}`} alt={product && product.name} className="singleProduct__img" />
+        <img src={`${product && product.img}`} alt={product && product.name} className="singleProduct__img" />
         <div className="singleProduct__content">
           <Typography variant="h2">{product && product.name}</Typography>
           <Typography variant="body2" css="">{product && product.description}</Typography>
@@ -65,13 +65,13 @@ const Products = ({ products, plan_id }) => {
                 !added ? (
                   <Button varaint="contained" size="big" onClick={handleAddToCart}>
                     <BsCart3 />
-                    Add to cart
+                    افزودن به سبد
                   </Button>
                 )
                   : (
                     <Button varaint="contained" size="big" onClick={handleAddToCart}>
                       <BsCart3 />
-                      Remove from cart
+                      حذف از سبد
                     </Button>
                   )
               }
