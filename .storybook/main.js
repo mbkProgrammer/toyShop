@@ -5,8 +5,12 @@ module.exports = {
     "../containers/**/*.jsx",
     "../containers/**/*.stories.jsx"
   ],
-  // "addons": [
-  // ],
+  "addons": [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
+    "storybook-addon-next-router",
+  ],
   staticDirs: ['../public'],
   "framework": "@storybook/react",
   "core": {
